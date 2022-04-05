@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        TimerTask tarea = new TimerTask() {
+        TimerTask carlos = new TimerTask() {
             @Override
             public void run() {
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
@@ -29,6 +29,6 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         Timer time = new Timer();
-        time.schedule(tarea,5000);
+        time.schedule(carlos,5000);
     }
 }
